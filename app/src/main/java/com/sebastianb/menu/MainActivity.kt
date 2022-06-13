@@ -33,6 +33,11 @@ class MainActivity : Activity() {
 
 
         mainBinding.buttonPedir.setOnClickListener{
+
+            val nombres = mainBinding.nameTextFile.text.toString()
+            val emailu = mainBinding.emailEditText.text.toString()
+            val celular = mainBinding.celularTextFile.text.toString()
+
             if (mainBinding.emailEditText.text?.isEmpty() == true || mainBinding.nameTextFile.text?.isEmpty() == true || mainBinding.celularTextFile.text?.isEmpty() == true|| mainBinding.celularTextFile.length() <10 || mainBinding.celularTextFile.length()>10 || mainBinding.emailEditText.length()<11 || mainBinding.nameTextFile.length()<3) {
                 Toast.makeText(this, getString(R.string.ingresar_campos), Toast.LENGTH_SHORT).show()
 
@@ -58,6 +63,7 @@ class MainActivity : Activity() {
             }
             else {
                 Toast.makeText(this,getString(R.string.datos_registrados),Toast.LENGTH_SHORT).show()
+                mainBinding.textView.text = nombres+":"+" "+getString(R.string.datosson)+"\n"+getString(R.string.celular_text)+":"+" " +celular+"\n"+getString(R.string.direccion_text)+":"+" "+emailu+"\n"+getString(R.string.datos_registrados)
 
             }
 
@@ -100,6 +106,34 @@ class MainActivity : Activity() {
                 adicion + " " + getString(R.string.queso_mozarella)
 
 
+            if (pann == "traditional bread") panv = 4000
+            if (pann == "Wholemeal Bread") panv = 4000
+            if (pann == "Potato bread") panv = 4500
+            if (queso == "cheddar cheese") quesov = 3000
+            if (queso == "Mozzarella cheese") quesov = 3000
+            if (queso == "American cheese") quesov = 3000
+            if (queso == "Blue cheese") quesov = 3500
+            if (queso == "No cheese") quesov = 0
+            if (proteina == "Pork") protev = 5000
+            if (proteina == "Beef") protev = 5000
+            if (proteina == "Crispy chicken") protev = 5500
+            if (salsap == "tomato sauce") salsav = 1500
+            if (salsap == "Mayonnaise") salsav = 1500
+            if (salsap == "BBQ sauce") salsav = 1500
+            if (salsap == "cheese sauce") salsav = 1500
+            if (salsap == "garlic sauce") salsav = 1500
+            if (salsap == "With all the sauces") salsav = 2500
+            if (salsap == "No sauces") salsav = 0
+            if (bebidap ==  "No drink") bebidav = bebidav - 2000
+            if (bebidap == "Coke" || bebidap == "Sprite" || bebidap == "Lemonade" || bebidap == "Pepsi" || bebidap == "Colombian" || bebidap == "Coke zero" || bebidap == "Sparkling water" || bebidap == "Still water") bebidav =
+                2000
+
+            if (acomp == "Helmets") acompv = 3000
+            if (acomp == "French fries") acompv = 3000
+            if (acomp == "chips") acompv = 3000
+            if (acomp == "bananas") acompv = 3000
+            if (acomp == "Without accompaniment") acompv = 0
+
             if (pann == "Pan tradicional") panv = 4000
             if (pann == "Pan Integral") panv = 4000
             if (pann == "Pan de papa") panv = 4500
@@ -119,14 +153,15 @@ class MainActivity : Activity() {
             if (salsap == "Con todas las salsas") salsav = 2500
             if (salsap == "Sin salsas") salsav = 0
             if (bebidap == "Sin bebida") bebidav = bebidav - 2000
-            if (bebidap == "Coca col" || bebidap == "Sprite" || bebidap == "Limonada" || bebidap == "Pepsi" || bebidap == "Colombiana" || bebidap == "Coca cola zero" || bebidap == "Agua con gas" || bebidap == "Agua sin gas") bebidav =
+            if (bebidap == "Coca cola" || bebidap == "Sprite" || bebidap == "Limonada" || bebidap == "Pepsi" || bebidap == "Colombiana" || bebidap == "Coca cola zero" || bebidap == "Agua con gas" || bebidap == "Agua sin gas") bebidav =
                 2000
 
             if (acomp == "Cascos") acompv = 3000
             if (acomp == "Papas a la francesa") acompv = 3000
-            if (acomp == "Chips") acompv = 3000
-            if (acomp == "Platanitos") acompv = 3000
-            if (acomp == "sin acompañamiento") acompv = 0
+            if (acomp == "chips") acompv = 3000
+            if (acomp == "platanitos") acompv = 3000
+            if (acomp == "Sin acompañamiento") acompv = 0
+
             if (tomateCheckBox.isChecked || lechugaCheckBox.isChecked || cebollaCheckBox.isChecked) vegetalesv =
                 2000
             if (tocinetaCheckBox.isChecked) adicionesv = adicionesv + 2000
@@ -136,12 +171,10 @@ class MainActivity : Activity() {
             valor_hamburguesa =
                 quesov + protev + salsav + bebidav + acompv + vegetalesv + adicionesv + panv
 
-            val nombres = mainBinding.nameTextFile.text.toString()
-            val emailu = mainBinding.emailEditText.text.toString()
-            val celular = mainBinding.celularTextFile.text.toString()
 
 
-            if (mainBinding.emailEditText.text?.isEmpty() == true || mainBinding.nameTextFile.text?.isEmpty() == true || mainBinding.celularTextFile.text?.isEmpty() == true|| celular.length <10 || mainBinding.celularTextFile.length()>10 || mainBinding.emailEditText.length()<11 || mainBinding.nameTextFile.length()<3) {
+
+            if (mainBinding.emailEditText.text?.isEmpty() == true || mainBinding.nameTextFile.text?.isEmpty() == true || mainBinding.celularTextFile.text?.isEmpty() == true|| mainBinding.celularTextFile.length() <10 || mainBinding.celularTextFile.length()>10 || mainBinding.emailEditText.length()<11 || mainBinding.nameTextFile.length()<3) {
                 Toast.makeText(this, getString(R.string.ingresar_campos), Toast.LENGTH_SHORT).show()
 
                 if (mainBinding.emailEditText.text?.isEmpty() == true)

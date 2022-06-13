@@ -1,4 +1,5 @@
 <resources>
+    <string name="datosson">"Sus datos son"</string>
     <string name="app_name">menu</string>
     <string name="buildburger">BuildBurguer</string>
     <string name="pan_text">Seleccion tu pan</string>
