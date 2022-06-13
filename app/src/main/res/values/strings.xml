@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">menu</string>
+    <string name="buildburger">BuildBurguer</string>
+    <string name="pan_text">Seleccion tu pan</string>
+    <string name="vegetales_text">Seleccione sus vegetales</string>
+    <string name="queso_text">Tipo de queso</string>
+    <string name="proteina_text">Proteina</string>
+    <string name="adiciones_text">Adiciones</string>
+    <string name="salsas_text">Salsas</string>
+    <string name="acompañamiento_text">Acompañamiento</string>
+    <string name="bebida_text">Bebida</string>
+    <string name="orden_text">Tipo de orden</string>
+    <string name="pedir_botton" />
+    <string name="pedir_text_botton">Ordenar</string>
+    <string name="nombre_text" />
+    <string name="name_text">"Nombre "</string>
+    <string name="nombre_text_">Nombre</string>
+    <string name="celular_text">Numero de celular</string>
+    <string name="direccion_text">Direccion</string>
+    <string name="tomate">Tomate</string>
+    <string name="lechuga">Lechuga</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="Carne_de_res_button">Carne de res</string>
+    <string name="carne_cerdo">Carne de cerdo</string>
+    <string name="pollo_crispy">Pollo Crispy</string>
+    <string name="tocineta">Tocineta</string>
+    <string name="cebolla_caramelizado">Cebolla caramelizada</string>
+    <string name="queso_mozarella">Queso mozarella</string>
+    <string name="domicilio" />
+    <string name="nombreusuario">Nombre</string>
+    <string name="email_input">Email</string>
+    <string name="numcel">Numero de celular</string>
+
+    <string name="vacio">No puede estar vacio</string>
+    <string name="correo_valido">Ingrese correo valido</string>
+    <string name="datos_registrados">Su orden fue recibida con exito</string>
+    <string name="ingresar_campos">Debe ingresar todos los campos</string>
+    <string name="ingresar_email">Debe ingresar direccion</string>
+    <string name="digite_nombre">Digite nombre</string>
+    <string name="digite_celular">Digite celular</string>
+    <string name="digite_numcelular">Su numero debe ser de 10 digitos</string>
+    <string name="digite_direccion">Su direccion debe contener mas de 10 caracteres</string>
+    <string name="nombre_minimo">Digite mas de 2 caracteres</string>
+    <string name="valorapagar">Tu valor a pagar es: </string>
+    <string name="pedir">Pedir!</string>
+
+    <string-array name="pan">
+        <item>Pan tradicional</item>
+        <item>Pan Integral</item>
+        <item>Pan de papa</item>
+    </string-array>
+
+    <string-array name="queso">
+        <item>Queso cheddar</item>
+        <item>Queso mozzarella</item>
+        <item>Queso americano</item>
+        <item>Queso azul</item>
+        <item>Sin queso</item>
+    </string-array>
+
+    <string-array name="proteina">
+        <item>Carne de cerdo</item>
+        <item>Carne de res</item>
+        <item>Pollo crispy</item>
+    </string-array>
+
+    <string-array name="Salsas">
+        <item>Salsa de tomate</item>
+        <item>Mayonesa</item>
+        <item>Salsa bbq</item>
+        <item>Salsa de queso</item>
+        <item>Salsa de ajo</item>
+        <item>Con todas las salsas</item>
+        <item>Sin salsas</item>
+    </string-array>
+
+    <string-array name="bebida">
+        <item>Coca cola</item>
+        <item>Sprite</item>
+        <item>Limonada</item>
+        <item>Pepsi</item>
+        <item>Colombiana</item>
+        <item>Coca cola zero</item>
+        <item>Agua con gas</item>
+        <item>Agua sin gas</item>
+        <item>Sin bebida</item>
+    </string-array>
+
+    <string-array name="acompañamiento">
+        <item>Cascos</item>
+        <item>Papas a la francesa</item>
+        <item>chips</item>
+        <item>platanitos</item>
+        <item>Sin caompañamiento</item>
+    </string-array>
+</resources>

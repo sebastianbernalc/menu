@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bbbh_foreground"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/vegetales_radio_group"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetales_text">
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/tomate"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/lechuga"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/cebolla"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner9"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/verde"
+        android:entries="@array/acompañamiento"
+        app:layout_constraintEnd_toStartOf="@+id/spinner10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acompañamiento_text"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinner10"
+        android:layout_width="151dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/verde"
+        android:entries="@array/bebida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner9"
+        app:layout_constraintTop_toBottomOf="@+id/bebida_text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="151dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/verde"
+        android:entries="@array/Salsas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner3"
+        app:layout_constraintTop_toBottomOf="@+id/salsas_text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="151dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/verde"
+        android:entries="@array/proteina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/proteina_text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/verde"
+        android:entries="@array/queso"
+        app:layout_constraintEnd_toStartOf="@+id/spinner8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/queso_text"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/nombre_edit_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buildburger"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pan_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/pan_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vegetales_text"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetales_radio_group" />
+
+    <TextView
+        android:id="@+id/vegetales_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/vegetales_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input_text_layout" />
+
+    <TextView
+        android:id="@+id/queso_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/queso_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/proteina_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/proteina_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetales_radio_group" />
+
+    <TextView
+        android:id="@+id/adiciones_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/adiciones_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner9" />
+
+    <TextView
+        android:id="@+id/salsas_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/salsas_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+
+    <TextView
+        android:id="@+id/acompañamiento_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/acompañamiento_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+    <TextView
+        android:id="@+id/bebida_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="71dp"
+        android:text="@string/bebida_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner8" />
+
+    <TextView
+        android:id="@+id/nombre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nombre_text_"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_edit_text1" />
+
+    <TextView
+        android:id="@+id/celular_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/celular_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_text" />
+
+    <TextView
+        android:id="@+id/direccion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/direccion_text"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celular_text" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/verde"
+        android:entries="@array/pan"
+        app:layout_constraintEnd_toStartOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pan_edit_text"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adiciones_text">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/tocineta"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/cebolla_caramelizado"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/queso_mozarella"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pedir_botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/pedir_text_botton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre_input_text_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        app:boxBackgroundColor="@color/bruger_back_background"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nombre_text"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_edit_text1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_text_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/celular_input_text_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        app:boxBackgroundColor="@color/bruger_back_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/celular_text"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_input_text_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/celular_text_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_input_text_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+
+        app:boxBackgroundColor="@color/bruger_back_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/direccion_text"
+        app:layout_constraintTop_toBottomOf="@+id/celular_input_text_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#616161"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_pedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:layout_weight="1"
+        android:text="@string/pedir"
+        app:layout_constraintEnd_toStartOf="@+id/pedir_botton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
