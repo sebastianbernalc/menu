@@ -44,6 +44,7 @@
     <string name="nombre_minimo">Digite mas de 2 caracteres</string>
     <string name="valorapagar">Tu valor a pagar es: </string>
     <string name="pedir">Pedir!</string>
+    <string name="valor">Valor</string>
 
     <string-array name="pan">
         <item>Pan tradicional</item>

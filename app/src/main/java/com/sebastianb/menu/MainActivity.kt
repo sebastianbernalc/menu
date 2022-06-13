@@ -194,7 +194,7 @@ class MainActivity : Activity() {
                 if (mainBinding.celularTextFile.text?.isEmpty() == true)
                     mainBinding.celularTextFile.error = getString(R.string.digite_celular)
 
-
+                mainBinding.textView.text=null
 
             }
             else {val final = valor_hamburguesa.toString()
